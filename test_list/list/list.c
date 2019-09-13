@@ -64,7 +64,7 @@ bool AddItem(Item item, List * plist)
     pnew->next = NULL;
     if(scan  == NULL)
         *plist = pnew;
-    else
+    else	//从队尾插入项目，时间复杂度为O(n)
     {
         while(scan->next != NULL)
             scan = scan->next;

@@ -285,7 +285,7 @@ void DeleteAll(Tree * ptree)
 /*
  * 二叉树特点：左节点中的项目是父节点中项目的前序项
  *           右节点中的项目是父节点中项目的后续项
- * 遍历思路：从树根向左开始寻找最底部的节点，显示该节点(其左右指向为NULL)
+ * 遍历思路：从树根向左开始寻找最底部的节点，显示该节点(其叶子节点指向为NULL)
  *         然后再显示其父亲节点，再显示其兄弟节点，以此类推！ 
  */
 static void InOrder(const Node * root,void(*pfun)(Item item))

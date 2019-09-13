@@ -74,6 +74,13 @@ bool DeQueue(Item * pitem, Queue * pq)
     return true;
 }
 
+
+/*
+ *备注：该调用函数从队尾对函数进行相关删除操作
+ 	按照队列的定义（先进先出规则)，队列里面
+	是没有这个操作函数的，此处仅做编程练习
+	使用。
+ * */
 bool delete_from_rear(Item * pitem, Queue * pq)
 {
     //定义两个节点，作为中间指针；
